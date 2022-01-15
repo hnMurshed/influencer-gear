@@ -9,11 +9,7 @@ body {
 a {
     text-decoration: none;
 }
-h1 {
-    margin: 0;
-    padding: 0;
-}
-h2 {
+h1, h2, h4 {
     margin: 0;
     padding: 0;
 }
@@ -57,7 +53,7 @@ header nav ul {
 header nav>ul {
     display: flex;
 }
-nav ul li {
+ul li {
     list-style: none;
     padding: 5px 20px;
     transition: 0.3s;
@@ -70,10 +66,10 @@ nav ul li a {
     font-size: 16px;
     font-weight: 600;
 }
-header .menu-part .menu-icons svg {
+header .menu-part .menu-icons a {
     padding: 0 20px;
 }
-header .menu-part .menu-icons svg:last-child {
+header .menu-part .menu-icons a:last-child {
     padding: 0;
 }
 header .menu-part .menu-icons img {
@@ -113,6 +109,12 @@ main {
 .link-button span {
     margin-right: 8px;
 }
+.journey-section .img-area img {
+    transition: 0.3s;
+}
+.journey-section .img-area img:hover {
+    transform: rotate(15deg) scale(1.1);
+}
 
 /*  --------------
     popular-sectoin
@@ -138,6 +140,10 @@ main {
     padding: 18px 0;
     box-shadow: 4px 0 24px #00000028;
     border-radius: 6px;
+    transition: 0.3s;
+}
+.popular-section .product:hover {
+    transform: translatey(-10px);
 }
 .popular-section .product .product-info {
     display: flex;
@@ -168,17 +174,63 @@ main {
 .product .product-info .price ~ span {
     line-height: 24px;
 }
-.popular-section .link-button {
-    display: block;
+.popular-section .viewmore-button {
     text-align: right;
-    background-color: white;
-    padding: 0;
+}
+.popular-section .link-button {
+    background-color: transparent;
     color: #E02C6D;
-    border-radius: 0;
     margin-top: 50px;
 }
 .popular-section .link-button:hover {
     transform: scale(1);
-    font-size: 16px;
-    position: relative;
+    background-color: #E02C6D;
+    color: white;
+}
+
+/*  --------------
+    footer part starts
+    ---------------  */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #0A0826;
+    padding: 60px 0;
+    color: white;
+    text-align: center;
+}
+footer h4 {
+    font-size: 24px;
+    font-weight: 700;
+}
+footer small {
+    line-height: 24px;
+}
+footer .social-icons {
+    margin-top: 15px;
+}
+footer .social-icons ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+footer .social-icons ul li {
+    padding: 0;
+    margin: 0 5px;
+}
+footer .social-icons ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    font-size: 17px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.219);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+footer ul li a:hover {
+    transform: scale(1.2);
 }
