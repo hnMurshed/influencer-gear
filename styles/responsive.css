@@ -1,0 +1,43 @@
+/* tablet device */
+@media only screen and (max-width:768px) {
+    header .menu-bar {
+        display: inline-block;
+    }
+    header .main-menu {
+        display: none;
+    }
+    header .menu-icons a:first-child {
+        display: none;
+    }
+
+    .journey-section .flex-container {
+        flex-direction: column;
+    }
+    .journey-section .text-area {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .popular-section .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* mobile device */
+@media only screen and (max-width: 480px) {
+    .journey-section .img-area img {
+        width: 300px;
+        height: auto;
+    }
+    .popular-section .products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .signup-section input[type="email"] {
+        width: auto;
+        margin: 10px 0;
+    }
+    .signup-section input:not(input[type="submit"]) {
+        margin: 5px 0;
+    }
+}
