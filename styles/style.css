@@ -32,6 +32,8 @@ header {
     justify-content: center;
     background-color: #E02C6D;
     padding: 30px 0;
+    position: sticky;
+    top: 0;
 }
 header .flex-container {
     justify-content: space-between;
